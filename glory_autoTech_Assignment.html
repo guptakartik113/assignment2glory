@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .left_logo:hover {
+            -ms-transform: scale(1.5);
+            /* IE 9 */
+            -webkit-transform: scale(1.5);
+            /* Safari 3-8 */
+            transform: scale(1.5);
+        }
+
+        .right_logo:hover {
+            -ms-transform: scale(1.5);
+            /* IE 9 */
+            -webkit-transform: scale(1.5);
+            /* Safari 3-8 */
+            transform: scale(1.5);
+        }
+
+        .left_logo {
+            float: left;
+            cursor: pointer;
+            position: fixed;
+
+
+        }
+
+        .right_logo {
+            float: right;
+            cursor: pointer;
+            position: fixed;
+            margin-left: 96%;
+
+
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="left_logo">
+        <a href="left_page.html" class="angle-double-left"> <i class="fa fa-angle-double-left" style="font-size:48px;color:red"></i>
+        </a>
+    </div>
+
+   
+    <div class="right_logo">
+        <a href="right_page.html"><i class="fa fa-angle-double-right" style="font-size:48px;color:red"></i></a>
+    </div>
+
+
+    <img style="width: 400px; " src="photo.jpg" class="center">
+
+   
+    <h2 style="text-align: center" id="secondsdisplay"></h2>
+    
+    
+    <div style="height: 700px"></div>
+    
+    
+    <div id="xyz">
+        <h1 style="text-align: center">kartik Gupta</h1>
+    </div>
+
+
+    <script>
+        var seconds = 0;
+
+        function displayseconds() {
+            seconds += 1;
+            document.getElementById('secondsdisplay').innerHTML = "This page will be automatically scroll down in 5 Seconds ...";
+        }
+        setInterval(displayseconds, 1000);
+
+        function redirectpage() {
+
+            window.location = "glory_autoTech_Assignment.html#xyz";
+        }
+        setTimeout('redirectpage()', 4000);
+
+    </script>
+</body>
+
+</html>
